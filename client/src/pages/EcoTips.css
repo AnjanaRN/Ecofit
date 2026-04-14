@@ -1,0 +1,180 @@
+.eco-tips-page {
+  padding: 24px 48px 80px;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255,255,255,0.78), transparent 28%),
+    radial-gradient(circle at 72% 70%, rgba(168, 227, 186, 0.42), transparent 28%),
+    radial-gradient(circle at 50% 45%, rgba(210, 242, 220, 0.38), transparent 34%),
+    linear-gradient(180deg, #edf6f0 0%, #dff1e4 100%);
+  min-height: 100vh;
+}
+
+.eco-tips-hero {
+  text-align: center;
+  padding: 76px 0 44px;
+}
+
+.eco-tips-badge {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #d8efe0;
+  color: #357a5d;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.eco-tips-title {
+  margin: 0 auto 18px;
+  max-width: 920px;
+  font-family: "DM Serif Display", serif;
+  font-size: 72px;
+  line-height: 1.05;
+  color: #14231c;
+}
+
+.eco-tips-title span {
+  color: #34a67a;
+  font-style: italic;
+}
+
+.eco-tips-subtext {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #70877b;
+}
+
+.eco-tips-tabs {
+  max-width: 1320px;
+  margin: 0 auto 40px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tips-tab {
+  height: 48px;
+  padding: 0 22px;
+  border-radius: 999px;
+  border: 1px solid #d7eadc;
+  background: rgba(255,255,255,0.72);
+  color: #5c7769;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(60, 99, 77, 0.05);
+}
+
+.active-tab {
+  background: linear-gradient(135deg, #1f8e68, #167a5a);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 12px 24px rgba(31, 142, 104, 0.22);
+}
+
+.tips-grid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.tip-card {
+  position: relative;
+  background: rgba(255,255,255,0.78);
+  border-radius: 34px;
+  box-shadow: 0 18px 40px rgba(60, 99, 77, 0.10);
+  padding: 32px 30px 28px;
+  min-height: 360px;
+  overflow: hidden;
+}
+
+.tip-corner-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 84px;
+  height: 84px;
+  background: rgba(221, 237, 229, 0.78);
+  border-bottom-right-radius: 34px;
+}
+
+.tip-number {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 18px;
+  color: #54a783;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.tip-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+.tip-card h3 {
+  margin: 0 0 14px;
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #17251e;
+}
+
+.tip-text {
+  margin: 0;
+  color: #72897d;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.tip-badge {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #dff1e7;
+  color: #3a7d61;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .eco-tips-title {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .eco-tips-page {
+    padding: 20px;
+  }
+
+  .eco-tips-title {
+    font-size: 40px;
+  }
+
+  .eco-tips-subtext {
+    font-size: 17px;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tip-card {
+    min-height: auto;
+  }
+}
